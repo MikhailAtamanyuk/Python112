@@ -1,4 +1,5 @@
 import random
+import time
 
 w = int(input("Размерность массива: "))
 m = [[random.randint(0, 100) for x in range(w)] for y in range(w)]
@@ -36,5 +37,10 @@ for row in m:
         print(col, end="\t")
     print()
 # _________________________________________________________
+import locale
 
-print(Hello)
+# locale.setlocale(locale.LC_ALL, "ru")
+#
+# print(time.strftime("Сегодня: %B %d, %Y", time.localtime()))
+
+print("Hello, World!")
