@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="61f216b7-49a0-4571-b453-700445fb4402" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/112.py" beforeDir="false" afterPath="$PROJECT_DIR$/112.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dz1">
+  <component name="RunManager" selected="Python.112">
     <configuration name="112" type="PythonConfigurationType" factoryName="Python">
       <module name="Python112" />
       <option name="INTERPRETER_OPTIONS" value="" />
