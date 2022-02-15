@@ -75,31 +75,37 @@ else:
     print("Введите от 1 до 3")
 print()
 # _________________________________________________________
-lt = [6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1]
-print(lt)
-lt2 = []
-lt3 = []
-for i in lt:
-    if i == 3:
-        if i not in lt2:
-            lt2.append(i)
-    if i % 2 != 0 and i % 3 != 0 and i != 1:
-        if i not in lt2:
-            lt2.append(i)
-for i in lt:
-    if i != 3:
-        if i % 2 == 0 or i % 3 == 0:
-            if i not in lt3:
-                lt3.append(i)
-print(lt2)
-a = 100
-b = 0
-for i in lt2:
-    if i < a:
-        a = i
-print("Min:", a)
-print(lt3)
-for i in lt3:
-    if i > b:
-        b = i
-print("Max:", b)
+s1 = set(input("Введите первую строку: "))
+s2 = set(input("Введите вторую строку: "))
+s1 = set("Python")
+s2 = set("Programming language")
+s3 = s1 - s2
+print("Искомыми буквами являются: ")
+for i in s3:
+    print(i, end=" ")
+# _________________________________________________________
+s=input("Введите строку: ")
+s = "Привет, мир!"
+vowels = "аяоёуюыиэе"
+def count_vowels(st):
+    return sum([1 for x in s.lower() if x in vowels])
+
+print("Количество гласных равно:", count_vowels(s))
+# _________________________________________________________
+s1 = set(input("Введите первую строку: "))
+s2 = set(input("Введите вторую строку: "))
+s1 = set("test")
+s2 = set("string")
+s3 = s1 | s2
+print("Искомыми буквами являются: ")
+for i in s3:
+    print(i, end=" ")
+# _________________________________________________________
+s1 = set(input("Введите первую строку: "))
+s2 = set(input("Введите вторую строку: "))
+s1 = set("hello")
+s2 = set("world")
+s3 = s1 ^ s2
+print("Искомыми буквами являются: ")
+for i in s3:
+    print(i, end=" ")
