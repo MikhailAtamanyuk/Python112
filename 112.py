@@ -109,3 +109,7 @@ s3 = s1 ^ s2
 print("Искомыми буквами являются: ")
 for i in s3:
     print(i, end=" ")
+# _________________________________________________________
+ls = [3, 6, 8, 9, 1, 2]
+print(list(map(lambda x: ls.index(x) ** 2 * ls.index(x) * x, ls)))
+print()
