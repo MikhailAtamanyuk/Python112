@@ -113,3 +113,7 @@ for i in s3:
 ls = [3, 6, 8, 9, 1, 2]
 print(list(map(lambda x: ls.index(x) ** 2 * ls.index(x) * x, ls)))
 print()
+# _________________________________________________________
+a = 5
+print(type(a))
+print(type(int))
