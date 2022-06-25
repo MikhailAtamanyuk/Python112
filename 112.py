@@ -343,3 +343,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# _______________________________________________________________________________________________
+import sqlite3 as sq
+
+
+with sq.connect('cars.db') as con:
+    cur = con.cursor()
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS cars(
+        car_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        model TEXT,
+        price INTEGER
+    )
+    """)
+
+    cur.execute("")
+
+# con.commit()
+# con.closer()
+
+
