@@ -1,16 +1,16 @@
-# This is a sample Python script.
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from models.database import DATABASE_NAME, Session
+import create_database as db_creator
 
+from models.lesson import Lesson, association_table
+from models.student import Student
+from models.group import Group
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    db_is_created = os.path.exists(DATABASE_NAME)
+    if not db_is_created:
+        db_creator.create_database()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    session = Session()
+    print(session.query(Lesson).all())
