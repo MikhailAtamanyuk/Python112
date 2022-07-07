@@ -53,7 +53,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_db">
+  <component name="RunManager" selected="Python.dz34_4">
     <configuration name="112" type="PythonConfigurationType" factoryName="Python">
       <module name="Python112" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dz33_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dz34_4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python112" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,11 +125,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DZ33_3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DZ34_4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZ33_3/dz33_3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZ34_4/dz34_4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,19 +182,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.112" />
-      <item itemvalue="Python.dz33_3" />
       <item itemvalue="Python.database (1)" />
       <item itemvalue="Python.products" />
       <item itemvalue="Python.create_db" />
       <item itemvalue="Python.main_db" />
+      <item itemvalue="Python.dz34_4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dz34_4" />
         <item itemvalue="Python.main_db" />
         <item itemvalue="Python.create_db" />
         <item itemvalue="Python.products" />
         <item itemvalue="Python.database (1)" />
-        <item itemvalue="Python.dz33_3" />
       </list>
     </recent_temporary>
   </component>
