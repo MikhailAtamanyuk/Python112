@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+{% for cat, msg in get_flashed_messages(True) %}
+    <div class="flash {{ cat }}">{{ msg }}</div>
+{% endfor %}
+<form action="/bonds" method="post" class="form-bonds">
+    <p>Имя: <input type="text" name="username" required></p>
+    <p>Email: <input type="text" name="email" required></p>
+    <p>Сообщение</p>
+    <p><textarea name="message" cols="30" rows="6"></textarea></p>
+    <p><input type="submit" value="Отправить"></p>
+</form>
+
+{% if username and email %}
+<p>Имя Пользователя: {{ username }}</p>
+<p>Email: {{ email }}</p>
+<p>Сообщение: {{ message }}</p>
+{% endif %}
+{% endblock %}
