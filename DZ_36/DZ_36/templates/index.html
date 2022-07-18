@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{{ super() }}
+<h1 class="menu"> Добро пожаловать в наш автосалон известных марок автомобилей!</h1>
+<a class="menu"> Здесь мы поможем подобрать Вам Ваш первый автомобиль
+<br>
+Ознакомьтесь, пожалуйста, с основными автопроизводителями и самыми популярными заказами у нашей организации</a>
+<div class="auto">
+    {% for i in cars %}
+<div class="auto card">
+ <div>
+     <a href="{{i.url}}">
+
+     <img src="{{i.img_logo}}"></a>
+</div>
+
+    </div>
+
+    {% endfor %}
+{% endblock content %}
